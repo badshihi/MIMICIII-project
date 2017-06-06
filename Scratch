@@ -1,0 +1,2 @@
+SELECT d.icd9_code,COUNT(d.icd9_code) AS NUMBERS FROM MIMICIII.DIAGNOSES_ICD d  GROUP BY d.icd9_code ORDER BY NUMBERS DESC;--用来查询得病最多的icd9_code
+SELECT icd9_code, short_title, long_title FROM MIMICIII.D_ICD_DIAGNOSES where icd9_code = '4019' or icd9_code =  '4280' or icd9_code =  '42731' or icd9_code =  '41401' or icd9_code =  '5849'or icd9_code =  '25000' or icd9_code =  '2724' ;--用来查询最多病的名称
